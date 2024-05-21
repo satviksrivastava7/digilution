@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  color: #000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+#menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#controls {
+  margin-top: 60px; /* Adjust for navbar height */
+  width: 25vw;
+  padding: 20px;
+  background: #f0f0f0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+#avatar img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  width: 100%;
+  padding: 10px;
+  background: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#life {
+  flex-grow: 1;
+  width: 75vw;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.numSelect {
+  width: 100px;
+  height: 25px;
+  padding: 0 10px;
+}
+
+.colSelect {
+  width: 100px;
+  height: 30px;
+}
+
+.particle-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+.rule select,
+.rule input {
+  margin-right: 10px;
+}
+
+.rule button {
+  width: 75px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  #container {
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: black;
+  }
+
+  #navbar {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #controls {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 999;
+    background: #f0f0f0;
+  }
+
+  #controls.open {
+    display: block;
+  }
+
+  #life {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    /*height: calc(100vh - 50px);*/
+  }
+}
