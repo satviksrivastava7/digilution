@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particle System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="menu-icon">&#9776;</div>
+      <div id="title">Digilution</div>
+      <div id="profile" class="profile">
+        <a href="https://bento.me/satviksrivastava7" target="_blank">
+          <img class="profile-image" src="./satvik.jpeg" alt="Avatar" />
+        </a>
+      </div>
+    </div>
+    <div id="container">
+      <div id="controls">
+        <h2>Conway Game Simulator</h2>
+        <p style="text-align: justify">
+          Experience the captivating dynamics of Conway's Game of Life with our
+          interactive particle simulator. Inspired by Conway's groundbreaking
+          cellular automaton, my website allows you to delve into a world of
+          mesmerizing particle interactions. Customize the spawning numbers,
+          colors, and sizes of particles to create unique simulations tailored
+          to your preferences. Watch as particles interact with each other based
+          on predefined rules, resulting in intricate patterns and movements.
+          Whether you're a casual observer or a seasoned enthusiast, our
+          platform offers endless possibilities for exploration and
+          experimentation. Immerse yourself in the beauty of emergent behavior
+          and uncover the fascinating complexities that arise from simple rules.
+          Join us on this journey of discovery and unleash your creativity with
+          our particle simulator inspired by Conway's timeless masterpiece.
+        </p>
+        <br />
+        <h3>Controls</h3>
+
+        <div class="particle-control">
+          <label>Particle</label>
+          <label>Spawning Number</label>
+          <label>Particle Color</label>
+        </div>
+
+        <div class="particle-control">
+          <label for="numRed">Particle 1:</label>
+          <input type="number" id="numRed" class="numSelect" value="200" />
+          <input type="color" id="colorRed" class="colSelect" value="#ff0000" />
+        </div>
+
+        <div class="particle-control">
+          <label for="numGreen">Particle 2:</label>
+          <input type="number" id="numGreen" class="numSelect" value="200" />
+          <input
+            type="color"
+            id="colorGreen"
+            class="colSelect"
+            value="#00ff00"
+          />
+        </div>
+
+        <div class="particle-control">
+          <label for="numBlue">Particle 3:</label>
+          <input type="number" id="numBlue" class="numSelect" value="200" />
+          <input
+            type="color"
+            id="colorBlue"
+            class="colSelect"
+            value="#0000ff"
+          />
+        </div>
+
+        <div class="particle-control">
+          <label for="numYellow">Particle 4:</label>
+          <input type="number" id="numYellow" class="numSelect" value="200" />
+          <input
+            type="color"
+            id="colorYellow"
+            class="colSelect"
+            value="#ffff00"
+          />
+        </div>
+
+        <div class="particle-control">
+          <label for="numOrange">Particle 5:</label>
+          <input type="number" id="numOrange" class="numSelect" value="200" />
+          <input
+            type="color"
+            id="colorOrange"
+            class="colSelect"
+            value="#ffa500"
+          />
+        </div>
+
+        <div class="particle-control">
+          <label for="numPurple">Particle 6:</label>
+          <input type="number" id="numPurple" class="numSelect" value="200" />
+          <input
+            type="color"
+            id="colorPurple"
+            class="colSelect"
+            value="#800080"
+          />
+        </div>
+
+        <div class="particle-control">
+          <label for="numPink">Particle 7:</label>
+          <input type="number" id="numPink" class="numSelect" value="200" />
+          <input
+            type="color"
+            id="colorPink"
+            class="colSelect"
+            value="#ffc0cb"
+          />
+        </div>
+
+        <div class="particle-control">
+          <label for="particleSize">Particle Size:</label>
+          <input type="range" id="particleSize" min="1" max="10" value="5" />
+        </div>
+
+        <div class="particle-control">
+          <label for="speedFactor">Speed Factor:</label>
+          <input
+            type="range"
+            id="speedFactor"
+            min="0.1"
+            max="1.0"
+            step="0.01"
+            value="0.75"
+          />
+        </div>
+
+        <button id="applySettings">Apply Settings</button>
+
+        <h3>Manage Rules</h3>
+        <div id="rules">
+          <!-- Dynamic rule management -->
+        </div>
+        <button id="addRule">Add Rule</button>
+        <br />
+        <br />
+      </div>
+      <canvas id="life"></canvas>
+    </div>
+    <script>
+      document.getElementById("menu-icon").addEventListener("click", () => {
+        const controls = document.getElementById("controls");
+        controls.classList.toggle("open");
+      });
+    </script>
+    <script src="new_script.js"></script>
+  </body>
+</html>
