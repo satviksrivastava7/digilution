@@ -8,4 +8,4 @@ Whether you're a casual observer or a seasoned enthusiast, our platform offers e
 Immerse yourself in the beauty of emergent behavior and uncover the fascinating complexities that arise from simple rules. 
 Join us on this journey of discovery and unleash your creativity with our particle simulator inspired by Conway's timeless masterpiece.
 
-Live site: [https](https://satviksrivastava7.github.io/digilution/)
+Live site: [Particle Simulator](https://satviksrivastava7.github.io/digilution/)
